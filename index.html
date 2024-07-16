@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Survey Form Created by Michael Flourish</h1>
+        <p id="description">Please fill out the form below to participate in our survey.</p>
+    </div>
+    <div class="container">
+        <form id="survey-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <!-- Email Field -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <!-- Number Field -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age:</label>
+                <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required>
+            </div>
+            
+            <!-- Dropdown Field -->
+            <div class="form-group">
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown" name="role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <label>Would you recommend this survey to a friend?</label>
+                <label><input type="radio" name="recommend" value="definitely" required> Definitely</label>
+                <label><input type="radio" name="recommend" value="maybe" required> Maybe</label>
+                <label><input type="radio" name="recommend" value="notSure" required> Not Sure</label>
+            </div>
+            
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <label>What would you like to see improved? (Check all that apply)</label>
+                <label><input type="checkbox" name="improve" value="front-end"> Front-end Projects</label>
+                <label><input type="checkbox" name="improve" value="back-end"> Back-end Projects</label>
+                <label><input type="checkbox" name="improve" value="data-visualization"> Data Visualization</label>
+                <label><input type="checkbox" name="improve" value="challenges"> Challenges</label>
+                <label><input type="checkbox" name="improve" value="open-source"> Open Source Community</label>
+                <label><input type="checkbox" name="improve" value="gitter-help"> Gitter Help Rooms</label>
+                <label><input type="checkbox" name="improve" value="videos"> Videos</label>
+                <label><input type="checkbox" name="improve" value="city-meetups"> City Meetups</label>
+                <label><input type="checkbox" name="improve" value="wiki"> Wiki</label>
+                <label><input type="checkbox" name="improve" value="forum"> Forum</label>
+                <label><input type="checkbox" name="improve" value="additional-courses"> Additional Courses</label>
+            </div>
+            
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
